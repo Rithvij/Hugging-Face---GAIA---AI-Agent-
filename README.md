@@ -131,3 +131,38 @@ This implementation prioritizes:
 
 It is designed specifically for **benchmark-driven environments** such as GAIA rather than conversational chat use cases.
 
+## Installation
+**1. Clone the repository**
+``git clone <repository-url>
+cd <repository-name>``
+
+**2. Set up Python virtual environment**
+For MacOS
+``python -m venv .venv
+source .venv/bin/activate``
+
+
+For Windows -
+``python -m venv .venv
+.\.venv\Scripts\activate``
+
+**3. Install dependencies**
+``pip install -r requirements.txt``
+
+**4. Configure environment variables**
+
+For Unix / macOS
+
+``export HF_TOKEN="your_huggingface_token"
+export OPENAI_API_KEY="your_openai_api_key"
+export GEMINI_API_KEY="your_gemini_api_key"``
+
+
+For Windows
+
+``set HF_TOKEN=your_huggingface_token
+set OPENAI_API_KEY=your_openai_api_key
+set GEMINI_API_KEY=your_gemini_api_key``
+
+**5. Run the application**
+``python app.py``
